@@ -1,14 +1,14 @@
-<div class="headerRootContainer py-2 px-3 d-flex justify-content-between align-items-center">
+<div class="headerRootContainer py-2 px-3 d-flex justify-content-between align-items-center" [dir]="(lang === 'English')?'ltr':'rtl'">
 <div>Logo Here</div>
 <div>
     <div class="d-inline-block mr-4">
-        <button mat-button [matMenuTriggerFor]="LanMenu">En</button>
-        <mat-menu #LanMenu="matMenu" xPosition="after">
-            <button mat-menu-item>English</button>
-            <button mat-menu-item>Arabic</button>
+        <button mat-button [matMenuTriggerFor]="LanMenu">{{lang}}</button>
+        <mat-menu #LanMenu="matMenu" xPosition="after" (closed)="menuChanged($event)">
+            <button mat-menu-item (click)="switchLanguage('en')" [disabled] = "lang === 'English'">English</button>
+            <button mat-menu-item (click)="switchLanguage('ar')"  [disabled] = "lang === 'Arabic'">Arabic</button>
         </mat-menu>
     </div>
-    <button mat-flat-button class="mx-1">Login</button>
-    <button mat-stroked-button class="mx-1">Sign Up</button>
+    <button mat-flat-button class="mx-1">{{'Login' | translate}}</button>
+    <button mat-stroked-button class="mx-1">{{'SignUp' | translate}}</button>
 </div>
 </div>
