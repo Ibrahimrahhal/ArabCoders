@@ -1,0 +1,21 @@
+.legoLeftImage{
+    background-image: url('../../../../../assets/Images/landingPage/legoLeft.svg');
+    background-position: center;
+    background-size: contain;
+    height: 100%;
+    background-repeat: no-repeat;
+}
+.legoRightImage{
+    background-image: url('../../../../../assets/Images/landingPage/legoRight.svg');
+    background-position: center;
+    background-size: contain;
+    height: 70%;
+    background-repeat: no-repeat;
+}
+.bottomLegoColl{
+    background-image: url('../../../../../assets/Images/landingPage/legoOnw.svg');
+    background-position: center;
+    background-size: contain;
+    height: 100px;
+    background-repeat: no-repeat;
+}

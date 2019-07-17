@@ -8,11 +8,13 @@ import { HeaderComponent } from './Components/landing-page/landingPageComps/head
 import { HttpClientModule, HttpClient } from '@angular/common/http';
 import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
+import { LegoHeroAreaComponent } from './Components/landing-page/landingPageComps/lego-hero-area/lego-hero-area.component';
 @NgModule({
   declarations: [
     AppComponent,
     LandingPageComponent,
-    HeaderComponent
+    HeaderComponent,
+    LegoHeroAreaComponent
   ],
   imports: [
     BrowserModule,
