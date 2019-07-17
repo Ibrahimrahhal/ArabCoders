@@ -1,4 +1,11 @@
 {
     "Login":"Login",
-    "SignUp":"Sign Up"
+    "SignUp":"Sign Up",
+    "English":"English",
+    "Arabic":"Arabic",
+    "HeroMain":"Build and Customize Your Learning Experiance",
+    "HeroSec":"Become The Developer You Always Wanted To Be",
+    "GoBuilder":"Go to Builder",
+    "WatchVideo":"Watch a Video",
+    "dir":"ltr"
 }
