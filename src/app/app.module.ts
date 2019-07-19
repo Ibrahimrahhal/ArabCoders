@@ -10,13 +10,15 @@ import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { LegoHeroAreaComponent } from './Components/landing-page/landingPageComps/lego-hero-area/lego-hero-area.component';
 import { HeroSecondLevelComponent } from './Components/landing-page/landingPageComps/hero-second-level/hero-second-level.component';
+import { LoginComponent } from './Components/login/login.component';
 @NgModule({
   declarations: [
     AppComponent,
     LandingPageComponent,
     HeaderComponent,
     LegoHeroAreaComponent,
-    HeroSecondLevelComponent
+    HeroSecondLevelComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,

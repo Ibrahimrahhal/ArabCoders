@@ -1,6 +1,8 @@
 import { TranslateService } from '@ngx-translate/core';
 import { Component, OnInit, Inject } from '@angular/core';
 import { DOCUMENT }  from '@angular/common';
+import { MatDialog } from '@angular/material/dialog';
+import { LoginComponent } from 'src/app/Components/login/login.component';
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
@@ -8,7 +10,9 @@ import { DOCUMENT }  from '@angular/common';
 })
 export class HeaderComponent implements OnInit {
 
-  constructor(private translateService:TranslateService, @Inject(DOCUMENT) public document:any) { }
+  constructor(private translateService:TranslateService,
+     @Inject(DOCUMENT) public document:any,
+     public dialog: MatDialog) { }
   lang:String = 'English';
   ngOnInit() {
     this.translateService.onLangChange.subscribe((lang)=>{
@@ -37,5 +41,14 @@ export class HeaderComponent implements OnInit {
       styleTagForDynamicFont.innerHTML=""
     }
 
+  }
+
+  openLoginDialog(){
+    let loginDialogRef=this.dialog.open(LoginComponent,{
+      maxWidth:'100vw'
+    });
+    loginDialogRef.afterClosed().subscribe(()=>{
+      
+    });
   }
 }
