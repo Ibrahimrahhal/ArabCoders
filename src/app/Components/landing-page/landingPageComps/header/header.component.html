@@ -1,11 +1,16 @@
 <div class="headerRootContainer py-3 px-3 d-flex justify-content-between align-items-center" [dir]="'dir' | translate">
-<div>Logo Here</div>
 <div>
-    <div class="d-inline-block mr-4">
-        <button mat-button [matMenuTriggerFor]="LanMenu">{{lang | translate}}</button>
+    <h3 class="font-weight-light">Arab Coders</h3>
+</div>
+<div>
+    <div class="d-inline-block mx-4">
+        <button mat-button [matMenuTriggerFor]="LanMenu">
+            <i class="fas fa-caret-square-down mx-1"></i>
+            {{lang | translate}}
+        </button>
         <mat-menu #LanMenu="matMenu" xPosition="after" (closed)="menuChanged($event)">
-            <button mat-menu-item (click)="switchLanguage('en')" *ngIf = "lang === 'Arabic'">{{'English' | translate}}</button>
-            <button mat-menu-item (click)="switchLanguage('ar')"  *ngIf = "lang === 'English'">{{'Arabic' | translate}}</button>
+            <button mat-menu-item (click)="switchLanguage('en')"  class="color-green" *ngIf = "lang === 'Arabic'">{{'English' | translate}}</button>
+            <button mat-menu-item (click)="switchLanguage('ar')" class="color-green"  *ngIf = "lang === 'English'">{{'Arabic' | translate}}</button>
         </mat-menu>
     </div>
     <button mat-flat-button class="mx-1">{{'Login' | translate}}</button>

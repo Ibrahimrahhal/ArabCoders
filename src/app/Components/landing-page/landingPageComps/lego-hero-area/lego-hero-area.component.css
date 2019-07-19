@@ -5,6 +5,9 @@
     height: 100%;
     background-repeat: no-repeat;
 }
+*{
+    color:#ffffff;
+}
 .legoRightImage{
     background-image: url('../../../../../assets/Images/landingPage/legoRight.png');
     background-position: center;

@@ -1,9 +1,15 @@
 .mat-stroked-button{
-    color:#da1f26 !important;
-    border-color: rgba(219, 31, 37, 0.6);
+    color:#ffffff !important;
+    border-color: rgba(255, 255, 255, 0.7);
 }
 
 .mat-flat-button{
-    color: #ffffff;
-    background-color: #da1f26;
+    color: #49a09d;
+    background-color: #ffffff;
+}
+.color-green{
+    color:#49a09d;
+}
+*{
+    color:#ffffff;
 }
