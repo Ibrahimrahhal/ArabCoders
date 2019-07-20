@@ -1,0 +1,11 @@
+.loginRootContainer{
+    width: 50vw;
+}
+
+.socialMediaIcon{
+transition: opacity 0.3s ease;
+}
+
+.socialMediaIcon:hover{
+    opacity: 0.5;
+}

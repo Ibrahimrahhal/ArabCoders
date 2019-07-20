@@ -1,34 +1,49 @@
-<div class="mx-5 px-3">
-  <h3 class="text-center my-1 mb-3">
+<div class="mx-5 px-3 my-5 loginRootContainer">
+  <h3 class="text-center my-1 mb-5">
     Welcome Back
     <hr />
   </h3>
   <div>
-    <form>
-      <div class="co-12 d-flex align-items-center">
-        <i class="far fa-address-card mx-2"></i>
-        <mat-form-field class="col-11">
-          <input matInput placeholder="Username">
-        </mat-form-field>
-      </div>
-      <div class="co-12 d-flex align-items-center">
-        <i class="fas fa-lock mx-2"></i>
-        <mat-form-field class="col-11">
-          <input matInput placeholder="Password">
-        </mat-form-field>
-      </div>
-    </form>
+<div class="border p-3">
+        <form>
+                <div class="co-12 d-flex align-items-center">
+                  <i class="far fa-address-card mx-2"></i>
+                  <mat-form-field class="col-11">
+                    <input matInput placeholder="Username">
+                  </mat-form-field>
+                </div>
+                <div class="co-12 d-flex align-items-center">
+                  <i class="fas fa-lock mx-2"></i>
+                  <mat-form-field class="col-11">
+                    <input matInput placeholder="Password">
+                  </mat-form-field>
+                </div>
+              </form>
+              <div>
+                  <button mat-flat-button class="col-12 mt-4">
+                      Login
+                  <i class="fas fa-sign-in-alt"></i>
+                  </button>
+              </div>
+</div>
+    <div class="position-relative my-4" style="height: 30px;">
+        <div class="position-absolute col-12" style="height: 1px; background-color: rgba(0,0,0,0.1); top: 0;bottom: 0; margin: auto;"></div>
+        <div class="position-absolute text-center font-weight-light w-100" style=""><span style="background-color: #ffffff" class="px-2">Login in With</span></div>
+    </div>
     <div class="col-12 d-flex justify-content-between mt-4">
-        <button style="color:#ffffff; background-color: #3b5998;; outline: 0; border-style: none;" class="col-3 shadow-sm py-2 px-2 rounded d-flex align-items-center justify-content-center">
+        <button style="color:#ffffff; background-color: #3b5998;; outline: 0; border-style: none;" 
+        class="col-3 shadow-sm py-2 px-2 rounded d-flex align-items-center justify-content-center socialMediaIcon">
             <i class="fab fa-facebook-f"></i>
         </button>
-        <button style="color:#ffffff; background-color: #CC3333; outline: 0; border-style: none;" class="col-3 shadow-sm py-2 px-2 rounded d-flex align-items-center justify-content-center">
+        <button style="color:#ffffff; background-color: #CC3333; outline: 0; border-style: none;" 
+        class="col-3 shadow-sm py-2 px-2 rounded d-flex align-items-center justify-content-center socialMediaIcon">
             <i class="fab fa-google"></i>
         </button>
-        <button style="color:#ffffff; background-color: #0077B5; outline: 0; border-style: none;" class="col-3 shadow-sm py-2 px-2 rounded d-flex align-items-center justify-content-center">
+        <button style="color:#ffffff; background-color: #0077B5; outline: 0; border-style: none;" 
+        class="col-3 shadow-sm py-2 px-2 rounded d-flex align-items-center justify-content-center socialMediaIcon">
             <i class="fab fa-linkedin-in"></i>
         </button>
     </div>
 
-  </div>
+
 </div>
