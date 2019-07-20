@@ -11,6 +11,7 @@ import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { LegoHeroAreaComponent } from './Components/landing-page/landingPageComps/lego-hero-area/lego-hero-area.component';
 import { HeroSecondLevelComponent } from './Components/landing-page/landingPageComps/hero-second-level/hero-second-level.component';
 import { LoginComponent } from './Components/login/login.component';
+import { ReactiveFormsModule } from '@angular/forms';
 @NgModule({
   declarations: [
     AppComponent,
@@ -25,6 +26,7 @@ import { LoginComponent } from './Components/login/login.component';
     AppRoutingModule,
     MeterialModule,
     HttpClientModule,
+    ReactiveFormsModule,
     TranslateModule.forRoot({
       loader: {
         provide: TranslateLoader,
